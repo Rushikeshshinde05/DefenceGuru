@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(32, 31, 31, 0.562);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0c0b0b;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.gallery-subheading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #141414;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.slides-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slides {
+  display: flex;
+  gap: 20px;
+}
+
+.slide {
+  flex: 0 0 calc(18% - 20px);
+}
+
+.slide img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.slide:hover {
+  filter: grayscale(0%);
+}
+
+/* First Row Slide Right */
+.slides:first-child {
+  animation: slideRight 16s linear infinite; /* Slowed down animation */
+}
+
+/* Second Row Slide Left */
+.slides:last-child {
+  animation: slideLeft 16s linear infinite; /* Slowed down animation */
+}
+
+/* Slide Right Animation */
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Slide Left Animation */
+@keyframes slideLeft {
+  from {
+    transform: translateX(-60%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3c4852;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* टेक्स्ट आणि आयकॉनमध्ये अंतर कमी केले */
+}
+
+.stat img {
+    width: 35px;  /* फोटो साईज वाढवली */
+    height: 35px; /* फोटो साईज वाढवली */
+    margin-bottom: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3c4852;
+    margin-bottom: 2px; /* संख्या आणि मजकूरामधली गॅप कमी केली */
+}
+
+.text p {
+    font-size: 1rem;
+    margin-top: 2px; /* मजकूर वर आणला */
+    line-height: 1.1; /* मजकूरामधली गॅप कमी केली */
+}
+
+.enquire-btn {
+    background: #004d32;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+}

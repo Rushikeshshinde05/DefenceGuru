@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Right-side gap remove */
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    margin: 50px auto; /* Centered ठेवले */
+    width: 90%; /* Full width for responsiveness */
+    max-width: 850px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 28px;
+    color: #0b5031;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0b5031;
+    outline: none;
+}
+
+.flex-row {
+    display: flex;
+    gap: 12px;
+}
+
+.flex-row input,
+.flex-row select {
+    flex: 1;
+}
+
+.domain-options,
+.relocate-options {
+    display: flex;
+    gap: 12px;
+}
+
+.domain,
+.relocate-option {
+    background-color: #e0e0e0;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+}
+
+.domain:hover,
+.relocate-option:hover {
+    background-color: #d0d0d0;
+}
+
+.domain.active,
+.relocate-option.active {
+    background-color: #0b5031;
+    color: white;
+}
+
+button {
+    background-color: #0b5031;
+    color: white;
+    padding: 14px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #093d25;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+.terms-link {
+    color: #0b5031;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive CSS */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 14px;
+    }
+
+    .domain,
+    .relocate-option {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        :root {
+            --primary-color: #e2e2e2;
+            --white: #892020;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            /* background: linear-gradient(rgba(234, 237, 236, 0.9), rgb(231, 248, 243)),
+            url('https://via.placeholder.com/1200x400') center/cover; */
+            background: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            /* background: linear-gradient(rgba(234, 237, 236, 0.9), rgb(231, 248, 243)),
+                        url('https://via.placeholder.com/1200x400') center/cover; */
+                        background: white;
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: -100px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .stat-card h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Mission Section */
+        .mission {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .mission img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+
+        /* Journey Timeline */
+        .timeline {
+            margin: 4rem 0;
+        }
+
+        .timeline h2 {
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .timeline-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Team Section */
+        .team {
+            margin: 4rem 0;
+        }
+
+        .team h2 {
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid var(--primary-color);
+        }
+
+        /* Real Stories Section */
+        .stories {
+            margin: 4rem 0;
+            
+        }
+
+        .stories h2 {
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .story-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .story-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- <h1>"Your Success, Our Commitment!</h1>
+            <p>➡️ Join us today and take the first step towards a bright future.</p> -->
+            <section class="success-text">
+                <h2>Your Success, <span>Our Commitment!</span></h2>
+                <p>Join us today and take the first step towards a bright future.</p>
+            </section>
+            
+            <style>
+            /* General Styling */
+            .success-text {
+                text-align: center;
+                /* padding: 20px; */
+                font-family: 'Arial', sans-serif;
+            }
+            
+            /* Main Heading with Elegant Gradient */
+            .success-text h2 {
+                font-size: 50px;
+                font-weight: bold;
+                background: linear-gradient(to right, #419e9f, #100517);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                animation: fadeIn 1.5s ease-in-out;
+            }
+            
+            /* Highlighting "Our Commitment!" */
+            .success-text h2 span {
+                background: linear-gradient(to right, #cd8623, #cdb94a);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+            /* Subtext Styling */
+            .success-text p {
+                font-size: 22px;
+                font-weight: 500;
+                color: #444;
+                margin-top: 10px;
+                animation: fadeIn 1.8s ease-in-out;
+            }
+            
+            /* Fade In Animation */
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            </style>
+            
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-container">
+            <h2 class="stats-heading">Behind Every Successful Career</h2>
+            <p class="stats-description">
+                Sevenmentor – A Renowned Brand For Quality Education And In-House Job Placement Services Since, Past Decades.
+            </p>
+        
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2>87%</h2>
+                    <p>Success Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h2>45k+</h2>
+                    <p>Active Students</p>
+                </div>
+                <div class="stat-card">
+                    <h2>40+</h2>
+                    <p>Countries</p>
+                </div>
+                <div class="stat-card">
+                    <h2>300+</h2>
+                    <p>Successful Careers Made</p>
+                </div>
+                <div class="stat-card">
+                    <h2>15+</h2>
+                    <p>Total Mentors</p>
+                </div>
+                <div class="stat-card">
+                    <h2>30+</h2>
+                    <p>Online/Offline Courses</p>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        /* Stats Section Styling */
+        .stats-container {
+            text-align: center;
+            margin: 4rem auto;
+            padding: 2rem;
+            max-width: 1100px;
+            
+          
+        }
+        
+        .stats-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1E3A8A; /* Deep Blue */
+            margin-bottom: 10px;
+        }
+        
+        .stats-description {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        /* Stat Cards */
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        
+        .stat-card h2 {
+            color: #1E3A8A; /* Deep Blue */
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .stat-card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        
+        /* Hover Effect */
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        </style>
+        
+
+    <!-- Mission, Vision & Values Section -->
+    <section>
+        <h1 class="simple-heading">Our Mission, Our People</h1>
+        <div class="info-section-text">
+          <div class="info-text">
+            <h2 class="info-heading">Our Mission</h2>
+            <p>Our mission is to empower students to become cybersecurity experts. We go beyond just teaching — offering real-world experience, advanced tools, and expert mentorship to shape your path to success.</p>
+          </div>
+          <div class="info-image"><img src="../aset/misstion3.webp" alt="Our Mission"></div>
+        </div>
+        <div class="info-section-text reverse">
+          <div class="info-text">
+            <h2 class="info-heading">Our Vision</h2>
+            <p>To be a leading force in shaping the future of cybersecurity education. We envision a world where every student becomes a skilled, confident, and responsible cyber professional.</p>
+          </div>
+          <div class="info-image"><img src="../aset/vision.webp" alt="Our Vision"></div>
+        </div>
+        <div class="info-section-text">
+          <div class="info-text">
+            <h2 class="info-heading">Our Values</h2>
+            <p><strong>Integrity</strong> – We uphold honesty and ethics in all we do.<br><strong>Excellence</strong> – We strive for the highest standards.<br><strong>Innovation</strong> – We embrace new technologies.<br><strong>Commitment</strong> – We are dedicated to success.<br><strong>Responsibility</strong> – We foster accountability and awareness.</p>
+          </div>
+          <div class="info-image"><img src="../aset/valu.webp" alt="Our Values"></div>
+        </div>
+        <div class="leaders-section">
+          <h2 class="simple-subheading">The Core Team Behind Defence Guru</h2>
+          <div class="leaders-container">
+            <div class="leader-card"><img src="images/nikhil.jpg" alt="Nikhil"><h2>Nikhil Barshikhar</h2><p>Founder & CEO</p></div>
+            <div class="leader-card"><img src="images/sonya.jpg" alt="Sonya"><h2>Sonya Hooja</h2><p>Founder & COO</p></div>
+            <div class="leader-card"><img src="images/ravikiran.jpg" alt="Ravikiran"><h2>Ravikiran Peesapati</h2><p>CBO - Career Academy</p></div>
+            <div class="leader-card"><img src="images/apurva.jpg" alt="Apurva"><h2>Apurva Sheth</h2><p>CBO - Enterprise Solutions</p></div>
+            <div class="leader-card"><img src="images/joy.jpg" alt="Joy"><h2>Joy Parekh</h2><p>Executive Director - Product</p></div>
+            <div class="leader-card"><img src="images/karthik.jpg" alt="Karthik"><h2>Karthik Chagal</h2><p>Chief Marketing Officer</p></div>
+            <div class="leader-card"><img src="images/ritesh.jpg" alt="Ritesh"><h2>Ritesh Singh</h2><p>Head - Executive Education</p></div>
+            <div class="leader-card"><img src="images/ankit.jpg" alt="Ankit"><h2>Ankit Khandelwal</h2><p>Chief HR Officer</p></div>
+            <div class="leader-card"><img src="images/akshat.jpg" alt="Akshat"><h2>Akshat Goel</h2><p>Chief Technology Officer</p></div>
+            <div class="leader-card"><img src="images/shikha.jpg" alt="Shikha"><h2>Shikha Sethi</h2><p>Head - CSR</p></div>
+          </div>
+        </div>
+        <div class="leaders-section">
+          <h2 class="simple-subheading">Our Trusted Advisors & Mentors</h2>
+          <div class="leaders-container">
+            <div class="leader-card"><h2>S K Mitra</h2><p>India Correspondent (AAM),<br>Founding Member (ACIND)</p></div>
+            <div class="leader-card"><h2>Amit Ratanpal</h2><p>Founder & MD,<br>Blinc Management Advisors</p></div>
+            <div class="leader-card"><h2>Sanjiv Malhotra</h2><p>Country Risk Manager,<br>Bank of America</p></div>
+            <div class="leader-card"><h2>Amit Nanavati</h2><p>Managing Director,<br>AN Steel Corp</p></div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        /* Minimal Headings */
+        /* .simple-heading {
+          font-size: 48px;
+          font-weight: 700;
+          text-align: center;
+          color: #0f1010;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+        } */
+
+        .simple-heading {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #202121cc;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+    
+        .simple-subheading {
+          font-size: 20px;
+          font-weight: 400;
+          text-align: center;
+          color: #475569;
+          margin-bottom: 40px;
+        }
+    
+        /* Section Layouts */
+        .info-section-text {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 80px 10%;
+          background: #ffffff;
+          gap: 60px;
+          flex-wrap: wrap;
+        }
+    
+        .info-section-text.reverse {
+          flex-direction: row-reverse;
+        }
+    
+        .info-text {
+          flex: 1;
+          min-width: 300px;
+        }
+    
+        .info-image {
+          flex: 1;
+          min-width: 300px;
+          display: flex;
+          justify-content: center;
+        }
+    
+        .info-image img {
+          width: 100%;
+          max-width: 450px;
+          border-radius: 20px;
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+    
+        .info-image img:hover {
+          transform: scale(1.05);
+        }
+    
+        .info-heading {
+          font-size: 36px;
+          color: #facc15;
+          margin-bottom: 20px;
+        }
+    
+        .info-text p {
+          font-size: 18px;
+          line-height: 1.8;
+        }
+    
+        /* Leaders Section */
+        .leaders-section {
+          padding: 80px 20px;
+          background: #ffffff;
+          color: rgb(11, 11, 11);
+          text-align: center;
+        }
+    
+        .leaders-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+          margin-top: 40px;
+        }
+    
+        .leader-card {
+          background-color: #f8fafc;
+          padding: 25px 30px;
+          border-radius: 12px;
+          width: 280px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s ease;
+        }
+    
+        .leader-card:hover {
+          transform: translateY(-5px);
+        }
+    
+        .leader-card img {
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+    
+        .leader-card h2 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 8px;
+          color: #334155;
+        }
+    
+        .leader-card p {
+          font-size: 14px;
+          color: #64748b;
+          line-height: 1.4;
+        }
+    
+        @media (max-width: 768px) {
+          .info-section-text {
+            flex-direction: column;
+            text-align: center;
+          }
+    
+          .info-image img {
+            max-width: 90%;
+          }
+    
+          .simple-heading {
+            font-size: 34px;
+          }
+    
+          .simple-subheading {
+            font-size: 18px;
+          }
+    
+          .leader-card {
+            width: 90%;
+          }
+        }
+      </style>
+
+<!-- end -->
+
+
+
+<!-- Real Stories Section -->
+<section class="stories">
+    <h2 class="stories-heading">Real Stories, Real Impact</h2>
+    <div class="stories-grid">
+        <div class="story">
+            <img src="../Assests/WhatsApp Image 2025-03-17 at 10.25.25.jpeg" alt="Student Success">
+            <h3 class="story-title">🚀 Student Success</h3>
+            <p class="story-text">"Thanks to <strong>DGCEI’s</strong> training, I secured a top position in a leading cybersecurity firm!"</p>
+        </div>
+        <div class="story">
+            <img src="../Assests/WhatsApp Image 2025-03-17 at 10.25.26.jpeg" alt="Global Influence">
+            <h3 class="story-title">🌍 Global Influence</h3>
+            <p class="story-text">"<strong>DGCEI students</strong> are now working in <strong>10+ countries</strong>, making an impact worldwide!"</p>
+        </div>
+        <div class="story">
+            <img src="../Assests/WhatsApp Image 2025-03-17 at 10.25.26 (1).jpeg" alt="Technology & Innovation">
+            <h3 class="story-title">💡 Technology & Innovation</h3>
+            <p class="story-text">"<strong>DGCEI students</strong> developed an <strong>advanced cybersecurity tool</strong> for real-world data protection!"</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Student Feedback  -->
+
+<section>
+    
+    
+        <div id="header-placeholder"></div>
+        <!-- Testimonial Cards Section -->
+    
+        <div class="header-container">
+        <h1 class="student-corner">Student Corner</h1>
+      </div>
+
+        <div class="testimonial-container">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials1.jpg" alt="John Doe">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Om  Deshmane</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    A very good institute which teaches you from zero to high. Provide all facilities doubt section and placement session which helps you lot further, a faculty is very nice and teaches perfect which will land all to high in further. Best trainers who motivates and guides you all time
+                </p>
+            </div>
+    
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials2.jpg.jpg" alt="Jane Smith">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Vedanti Gajanan Shende</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "This is not just the institute,this is the gateway to your successful and future-proof career.They're comitted to ensuring that you don't just finish the course, but you land a job in the field."
+                </p>
+            </div>
+    
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials3.png" alt="Alice Johnson">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ajay Bhikan Palhal</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Which is the best institute for learning and gaining hands-on experience in domains such as Cyber Security, Data Science, DevOps, etc.?"
+                </p>
+            </div>
+    
+            <!-- Testimonial Card 4 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials4.png" alt="Ankush pawar">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ankush Dnyneshwar Pawar</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Which is the best institute for learning and gaining hands-on experience in domains such as Cyber Security, Data Science, DevOps, etc.? The instructor is very supportive, treats students like family, and genuinely cares for them, making this class truly exceptional!"
+                </p>
+            </div>
+    
+            <!-- Testimonial Card 5 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials5.jpg" alt="Emily Davis">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Bhagvat Mutthe</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Very satisfied with the service! Everything was handled professionally and efficiently."
+                </p>
+            </div>
+    
+            <!-- Testimonial Card 6 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="../Assests/testiomonials6.jpg" alt="David Wilson">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Pravin kale</h3>
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    "Outstanding experience! The team went above and beyond to meet my needs."
+                </p>
+            </div>
+        </div>
+    
+        <!-- Testimonial Form Section -->
+      <!-- Testimonial Form Section -->
+   
+    
+    
+       
+        
+   
+</section>
+
+
+<!-- feedback style  -->
+ <style>
+    /* Global Styles */
+
+    #header-placeholder {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.section, .about-us {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* Header & Footer */
+#header-placeholder, #footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+/* Centering the Heading */
+.header-container {
+    width: 100%;
+    text-align: center;
+    padding-top: -10px; /* Adjust space from top */
+    margin-bottom: 30px;
+    
+
+}
+
+/* Student Corner Heading */
+.student-corner {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: #ff6600;
+    opacity: 0.5;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 15px;
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.rating {
+    color: #ffcc00;
+}
+
+.testimonial-text {
+    color: #555;
+    font-style: normal;
+    border-left: 4px solid #ff6600;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+/* Testimonial Form Container */
+.testimonial-form-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Form Styling */
+.testimonial-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Input & Textarea */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+    outline: none;
+}
+
+/* Upload Section */
+.upload-container {
+    text-align: center;
+    border: 2px dashed #ff6600;
+    padding: 15px;
+    border-radius: 6px;
+    background: #fff5e6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-container:hover {
+    background: #ffe0b3;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff6600;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+}
+
+.upload-input {
+    display: none;
+}
+
+/* Rating Section */
+.rating-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating-star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-star:hover,
+.rating-star.selected {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff6600, #e65c00);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #e65c00, #cc5200);
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+ </style>
+
+
+
+<style>
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-placeholder, #footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+/* Stories Section */
+.stories {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.stories h2{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 60px;
+    margin-top: -60px;
+
+}
+
+/* 🔵 Fully Blue Heading */
+/* .stories-heading {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+/* Stories Grid - Perfect Alignment */
+.stories-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Story Card (No Box, Only Text & Image) */
+.story {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Ensure Full Image Display */
+.story img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.story:hover img {
+    transform: scale(1.05);
+}
+
+/* Bold & Trendy Titles */
+.story-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* Readable & Balanced Story Text */
+.story-text {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Animation Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design - Mobile-Friendly */
+@media (max-width: 900px) {
+    .stories-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .story {
+        max-width: 100%;
+        width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stories-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story {
+        width: 90%;
+    }
+
+    .stories-heading {
+        font-size: 30px;
+    }
+}
+</style>
+
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <script src="../index.js" defer></script>
+        
+     
+    
+
+    <script>
+        // Timeline data
+        const timelineData = [
+            { year: '2020', title: 'Foundation', description: 'Started our educational journey' },
+            { year: '2021', title: 'Growth', description: 'Expanded to 20 countries' },
+            { year: '2022', title: 'Innovation', description: 'Launched new learning platforms' },
+            { year: '2023', title: 'Global Impact', description: 'Reached 45k+ students worldwide' }
+        ];
+
+        // Team members data
+        const teamData = [
+            { name: 'John Smith', role: 'CEO', image: 'https://via.placeholder.com/150' },
+            { name: 'Sarah Johnson', role: 'CTO', image: 'https://via.placeholder.com/150' },
+            { name: 'Mike Brown', role: 'Director', image: 'https://via.placeholder.com/150' },
+            { name: 'Emily Davis', role: 'Lead Instructor', image: 'https://via.placeholder.com/150' },
+            { name: 'David Wilson', role: 'Senior Instructor', image: 'https://via.placeholder.com/150' },
+            { name: 'Lisa Anderson', role: 'Course Developer', image: 'https://via.placeholder.com/150' }
+        ];
+
+        // Render timeline
+        function renderTimeline() {
+            const timeline = document.getElementById('timeline');
+            timelineData.forEach(item => {
+                const timelineItem = document.createElement('div');
+                timelineItem.className = 'timeline-item';
+                timelineItem.innerHTML = `
+                    <h3>${item.year}</h3>
+                    <h4>${item.title}</h4>
+                    <p>${item.description}</p>
+                `;
+                timeline.appendChild(timelineItem);
+            });
+        }
+
+        // Render team members
+        function renderTeam() {
+            const teamGrid = document.getElementById('team-members'); 
+            teamData.forEach(member => {
+                const memberCard = document.createElement('div');
+                memberCard.className = 'team-member';
+                memberCard.innerHTML = `
+                    <img src="${member.image}" alt="${member.name}">
+                    <h3>${member.name}</h3>
+                    <p>${member.role}</p>
+                `;
+                teamGrid.appendChild(memberCard);
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTimeline();
+            renderTeam();
+        });
+    </script>
+    
+        <div id="footer-placeholder"></div>
+        <script src="index.js"></script> <!-- Link your JS file -->
+
+</body>
+</html>

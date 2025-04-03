@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/Instruter.css" />
+    <title>Instructor Enquiry Form</title>
+    <link rel="stylesheet" href="../Styles/career.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <br />
+    <br />
+    <div class="form-container">
+      <h2>Instructor Enquiry Form</h2>
+      <form
+        id="enquiryForm"
+        action="#"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input
+            type="tel"
+            id="mobileNumber"
+            name="mobileNumber"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <!-- Qualification -->
+        <div class="form-group">
+          <label for="qualification">Qualification</label>
+          <input type="text" id="qualification" name="qualification" required />
+        </div>
+        <!-- Experience -->
+       <!-- Experience -->
+       <div class="form-group">
+        <label for="experience">Experience</label>
+        <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select Experience</option>
+            <option value="0-1">0-1 Year</option>
+            <option value="1-2">1-2 Years</option>
+            <option value="2-3">2-3 Years</option>
+            <option value="3+">3+ Years</option>
+        </select>
+    </div>
+
+        <!-- Salary Expected -->
+        <!-- <div class="form-group">
+          <label for="salary">Expected Salary</label>
+          <input type="number" id="salary" name="salary" required />
+        </div> -->
+        <!-- Previous Company -->
+        <div class="form-group">
+          <label for="prevCompany">Previous Company Name</label>
+          <input type="text" id="prevCompany" name="prevCompany" required />
+        </div>
+        <!-- Company Role -->
+        <div class="form-group">
+          <label for="Designation">Designation</label>
+          <input type="text" id="Designation" name="Designation" required />
+        </div>
+
+        <!-- Interested Domain -->
+        <div class="form-group">
+          <label>Interested Domain</label>
+          <div class="domain-options">
+            <div class="domain" onclick="selectDomain('Python')">Python</div>
+            <div class="domain" onclick="selectDomain('Cyber Security')">
+              Cyber Security
+            </div>
+            <div class="domain" onclick="selectDomain('Data Science')">
+              Data Science
+            </div>
+            <div class="domain" onclick="selectDomain('DevOps')">DevOps</div>
+          </div>
+          <input type="hidden" id="domain" name="domain" required />
+        </div>
+        <!-- Ready to Relocate -->
+        <div class="form-group">
+          <label>Ready to Relocate</label>
+          <div class="relocate-options">
+            <div class="relocate-option" onclick="selectRelocate('Yes')">Yes</div>
+              
+           
+            <div class="relocate-option" onclick="selectRelocate('No')">No</div>
+          </div>
+          <input type="hidden" id="relocate" name="relocate" required />
+        </div>
+        <!-- Skills -->
+        <div class="form-group">
+          <label for="skills">Your Skills</label>
+          <textarea id="skills" name="skills" rows="4" required></textarea>
+        </div>
+        <!-- Upload Resume -->
+        <div class="form-group">
+          <label for="resume">Upload Resume</label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            required
+          />
+        </div>
+        <!-- Upload Cover Letter -->
+        <div class="form-group">
+          <label for="coverLetter">Upload Cover Letter</label>
+          <input
+            type="file"
+            id="coverLetter"
+            name="coverLetter"
+            accept=".pdf,.doc,.docx"
+          />
+        </div>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <br /><br />
+    <div id="footer"></div>
+
+    <script src="../index.js" defer></script>
+    <!-- <script src="../index.js"></script> -->
+     <script> // JavaScript for handling form submission and sending data to the backend
+      document.getElementById('enquiryForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);  // Capture all form data including files
+
+        // Send form data to the backend
+        try {
+          const response = await fetch('http://localhost:5000/api/career', {
+            method: 'POST',
+            body: formData,
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            alert(result.message);
+          } else {
+            alert(result.error);
+          }
+        } catch (err) {
+          console.error('Error:', err);
+          alert('Failed to submit application.');
+        }
+      });
+
+      function selectDomain(domain) {
+        document.getElementById('domain').value = domain;
+      }
+
+      function selectRelocate(value) {
+        document.getElementById('relocate').value = value;
+      }</script>
+  </body>
+</html>

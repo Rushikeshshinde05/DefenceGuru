@@ -1,0 +1,98 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #c1d1d8, #41616b);
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #111;
+    text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Course Grid Layout */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-badge img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-footer {
+    margin-top: 15px;
+}
+
+button.learn-more {
+    background: #41616b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.learn-more:hover {
+    background: #2c4b52;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    header {
+        height: 50vh;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}

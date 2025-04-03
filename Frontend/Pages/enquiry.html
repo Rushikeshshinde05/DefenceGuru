@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Form</title>
+    <div id="header-placeholder"></div>
+
+    <style>
+      * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 110px;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  main {
+    padding: 40px 10px; /* Adjusted padding for mobile screens */
+  }
+
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    padding: 50px; /* Reduced padding for better fit */
+    max-width: 100%; /* Ensure the container takes full width on mobile */
+    gap: 15px; /* Reduced gap to save space */
+  }
+}
+
+/* For Laptop and Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    padding: 70px 30px; /* Adjust padding for laptops/tablets */
+  }
+
+  .container {
+    flex-direction: row; /* Keep row direction for tablets/laptops */
+    padding: 25px; /* Slightly reduced padding */
+    max-width: 1000px; /* Ensure max-width is retained */
+  }
+}
+
+.form-container,
+.image-container {
+  flex: 1 1 300px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.terms-container input {
+  width: auto;
+}
+
+label {
+  font-size: 14px;
+}
+
+#otherCourseContainer {
+  display: none;
+}
+
+/* Header now clean with no black background */
+#header-placeholder {
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Footer keeps the black background */
+#footer {
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Super Small Device Tweaks (iPhone SE / Pixel etc) */
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <br /><br />
+      <div class="container">
+        <div class="image-container">
+          <img src="../Assests/enquirey2.webp" alt="Student with Laptop" />
+        </div>
+        <div class="form-container">
+          <h3 style="text-align: center; font-weight: bold">
+            Ready to transform your career?
+          </h3>
+          <form id="careerForm">
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Full Name*"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email ID*"
+              required
+            />
+            <input
+              type="text"
+              id="phone"
+              placeholder="Contact Number*"
+              required
+            />
+            <select id="courseSelect" required>
+              <option value="" disabled selected>Select a Course</option>
+              <option>Certified Ethical Hacker</option>
+              <option>Computer Hacking Forensic Investigator</option>
+              <option>Certified Network Defender</option>
+              <option>Certified Penetration Testing Professional</option>
+              <option>Certified Cloud Security Engineer</option>
+              <option>Certified Application Security Engineer</option>
+              <option value="other">Other</option>
+            </select>
+            <input
+              type="text"
+              id="otherCourseContainer"
+              placeholder="Enter your course"
+              required
+            />
+            <div class="terms-container">
+              <input type="checkbox" id="terms" />
+              <label for="terms"
+                >I accept the
+                <a href="#" style="color: blue; text-decoration: underline"
+                  >Terms & Conditions</a
+                ></label
+              >
+            </div>
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <br /><br />
+    <div id="footer"></div>
+    <script src="../index.js" defer></script>
+
+    <script>
+      document.getElementById("terms").addEventListener("change", function () {
+        document.getElementById("submitBtn").disabled = !this.checked;
+      });
+
+      document
+        .getElementById("careerForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          let fullName = document.getElementById("fullName").value;
+          let email = document.getElementById("email").value;
+          let phone = document.getElementById("phone").value;
+          let course = document.getElementById("courseSelect").value;
+          let termsAccepted = document.getElementById("terms").checked;
+
+          // Check for email and phone validation
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          let phonePattern = /^[0-9]{10}$/;
+
+          if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          if (!phonePattern.test(phone)) {
+            alert("Please enter a valid 10-digit mobile number.");
+            return;
+          }
+
+          // Check if "other" course is selected and handle input accordingly
+          if (course === "other") {
+            course = document.getElementById("otherCourseContainer").value;
+          }
+
+          const data = {
+            fullName,
+            email,
+            phone,
+            course,
+            termsAccepted,
+          };
+
+          // Send the data to the API
+          try {
+            const response = await fetch("http://localhost:5000/api/course-enquiry", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+              alert(result.message);
+            } else {
+              alert(result.error);
+            }
+          } catch (err) {
+            console.error("Error:", err);
+            alert("Failed to submit course enquiry.");
+          }
+        });
+
+      document.getElementById("courseSelect").addEventListener("change", function () {
+        let otherCourseInput = document.getElementById("otherCourseContainer");
+        if (this.value === "other") {
+          otherCourseInput.style.display = "block";
+          otherCourseInput.setAttribute("required", "true");
+        } else {
+          otherCourseInput.style.display = "none";
+          otherCourseInput.removeAttribute("required");
+        }
+      });
+    </script>
+  </body>
+</html>

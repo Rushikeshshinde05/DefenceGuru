@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Support Card */
+.support-card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgb(92, 85, 147);
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin-left: 140px;
+    
+    
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Photo Section */
+.photo-section {
+    position: absolute;
+    left: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgb(92, 85, 147);
+}
+
+.photo-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    padding-left: 180px;
+}
+
+.form-section h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-section textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.buttons {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #2b67ab;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #171a1d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .support-card {
+        flex-direction: column;
+        padding: 90px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .photo-section {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 20px;
+    }
+
+    .form-section {
+        padding-left: 0;
+    }
+}

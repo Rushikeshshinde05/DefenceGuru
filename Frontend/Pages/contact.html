@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <!-- <link rel="stylesheet" href="../Styles/header.css"> -->
+         <link rel="stylesheet" href="../Styles/contact.css">
+        <!-- Link to external CSS -->
+    </head>
+    <body>
+ <!-- HEADER HTML PAGE START================================================================================== =======================-->
+
+        <nav class="navbar">
+            <div class="logo">
+                <img id="logo" src="../Assests/logo.png" alt="Defence Guru Logo">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="./about.html" onclick="closeMenu()">
+                        <b>About Us</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="./courses.html" onclick="closeMenu()">
+                        <b>Courses</b>
+                    </a>
+                </li>
+                <!-- Discover Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(event)">
+                        <b>Discover ▾</b>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="./home.html" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li>
+                            <a href="./placedstudentss.html" onclick="closeMenu()">Placements</a>
+                        </li>
+                        <li>
+                            <a href="./career.html" onclick="closeMenu()">Career</a>
+                        </li>
+                        <li>
+                            <a href="./gallary.html" onclick="closeMenu()">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="./feedback.html" onclick="closeMenu()">Student Corner</a>
+                        </li>
+                        <li>
+                            <a href="./enquiry.html" onclick="closeMenu()">Courses Enquiry</a>
+                        </li>
+                        <li>
+                            <a href="./helpsupoort.html" onclick="closeMenu()">Help and Support</a>
+                        </li>
+                        <li>
+                            <a href="./faq.html" onclick="closeMenu()">FAQ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./contact.html" onclick="closeMenu()">
+                        <b>Contact Us</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+<!-- HEADER HTML PAGE END================================================================================== =================-->
+
+        <!-- <div id="header-placeholder"></div> -->
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <!-- Google Map Background -->
+            <div class="map-container">
+                <!-- Direct Google Maps Directions Link -->
+                <a href="https://www.google.com/maps/dir//Gera+Imperium+Rise,+Wipro+Circle,+Hinjewadi+Phase+2,+Pune,+Maharashtra+411057/" target="_blank" class="map-overlay"></a>
+                <!-- Embedded Google Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.345924252555!2d73.7340123!3d18.5936375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97a12345678%3A0xfedcb482742abcde!2sGera+Imperium+Rise,+Wipro+Circle,+Hinjewadi+Phase+2,+Pune,+Maharashtra+411057!5e0!3m2!1sen!2sin!4v1711456789012"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <div class="contact-info">
+                <!-- <h1>CONTACT US</h1>
+                <p>
+                    Suggestions, questions or comments? Reach out to us.
+                    <br>
+                    Wed be happy
+          to help.
+                </p> --></div>
+                <div class="contact-form">
+                    <h2>Request More Information</h2>
+                    <form id="contact-us-form">
+                        <input type="text" id="full-name" placeholder="Full Name*" required>
+                        <input type="email" id="email" placeholder="Enter Email ID*" required>
+                        
+                        <div class="phone-input">
+                            <select id="phone-code">
+                                <option value="+91">India (+91)</option>
+                                <option value="+1">USA (+1)</option>
+                                <option value="+44">UK (+44)</option>
+                            </select>
+                            <input type="text" id="phone" placeholder="Contact Number*" required>
+                        </div>
+                
+                        <textarea id="message" placeholder="Your Message*" required></textarea>
+                
+                        <div class="terms-row">
+                            <div class="terms">
+                                <input type="checkbox" id="terms" required>
+                                <span>
+                                    I accept the
+                                    <a href="#">Terms & Conditions</a>
+                                </span>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+        </div>
+        <!-- Footer Section -->
+        <!-- Footer Section -->
+        <div class="footer1">
+            <div class="footer-content">
+                <h3>Keep In Touch</h3>
+                <h4>Headquarters</h4>
+                <p>
+                    Registered office No.623,624
+                    <br>
+                    Gera Imperium Rise,
+                     
+                    <br>
+                    Wipro Circle Rajiv gandhi infotech park,
+                    <br>
+                    Hinjewadi Phase 2, Pune 411057.
+                </p>
+                <h4>Email Us</h4>
+                <p>defencegurucyber.edu@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Defence-Guru-Cyber-Education-Institute/61557953980411/" target="_blank">
+                        <img src="../Assests/f.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/defence_guru_cyber/" target="_blank">
+                        <img src="../Assests/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/defence-guru-cyber-education-institute/?originalSubdomain=in" target="_blank">
+                        <img src="../Assests/link.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.youtube.com/@DefenceGuru23" target="_blank">
+                        <img src="../Assests/youtub.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="enquiry-container">
+            <div class="enquiry-box active">
+                <p class="enquiry-title">Enquire</p>
+            </div>
+            <div class="enquiry-box">
+                <img src="../Assests/bussness.jpeg" alt="For Business">
+                <p>For Business</p>
+                <button class="enquiry-btn">Enquire Now</button>
+            </div>
+            <div class="enquiry-box">
+                <img src="../Assests/teacher.jpeg" alt="Become our Instructor">
+                <p>Become our Instructor</p>
+                <button class="enquiry-btn">Enquire Now</button>
+            </div>
+            <div class="enquiry-box">
+                <img src="../Assests/carreers.jpeg" alt="Career">
+                <p>Career</p>
+                <button class="enquiry-btn">Enquire Now</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <div id="footer"></div>
+        <script src="../index.js" defer></script> 
+        <script>
+            document.getElementById('contact-us-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+        
+                const fullName = document.getElementById('full-name').value;
+                const email = document.getElementById('email').value;
+                const phoneCode = document.getElementById('phone-code').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+                const termsAccepted = document.getElementById('terms').checked;
+        
+                const contactData = {
+                    fullName,
+                    email,
+                    phoneCode,
+                    phone,
+                    message,
+                    termsAccepted
+                };
+        
+                fetch('http://localhost:5000/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(contactData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message) {
+                        alert('Form submitted successfully!');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error submitting the form.');
+                });
+            });
+        </script>        
+    </body>
+</html>

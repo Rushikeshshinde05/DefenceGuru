@@ -1,0 +1,601 @@
+
+/* General Styling */
+.success-text {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Heading with Elegant Gradient */
+.success-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #419e9f, #100517);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Highlighting "Our Commitment!" */
+.success-text h2 span {
+    background: linear-gradient(to right, #cd8623, #cdb94a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtext Styling */
+.success-text p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 10px;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Stats Section Styling */
+.stats-container {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 1100px;
+    
+  
+}
+
+.stats-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E3A8A; /* Deep Blue */
+    margin-bottom: 10px;
+}
+
+.stats-description {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+/* Stat Cards */
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stat-card h2 {
+    color: #1E3A8A; /* Deep Blue */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.stat-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #819ba680, #9aa5a8, #434b60);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 100%;
+}
+.container {
+    max-width: 100%;
+}
+.stats-grid, .timeline-grid, .team-grid, .stories-grid {
+    width: 100%;
+}
+
+
+.mission-vision-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+
+/* Grid Layout */
+.mission-vision-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Card Styling */
+.mission-vision-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.mission-vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Icon Container */
+.icon-container {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px auto 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container img {
+    width: 50px;
+    height: auto;
+}
+
+/* Headings */
+.mission-vision-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Text */
+.mission-vision-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 230px;
+    margin: 10px auto;
+}
+
+/* Connectors */
+.connector {
+    width: 10px;
+    height: 25px;
+    background: #666;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.mission { border-top: 5px solid #00A896; } /* Teal */
+.vision { border-top: 5px solid #FF7F50; } /* Orange */
+.values { border-top: 5px solid #1E88E5; } /* Blue */
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .mission-vision-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connector {
+        display: none;
+    }
+
+
+
+
+    /* real impact  */
+    
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-placeholder, #footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+/* Stories Section */
+.stories {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* 🔵 Fully Blue Heading */
+.stories-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #007BFF; /* Full Blue Color */
+}
+
+/* Stories Grid - Perfect Alignment */
+.stories-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Story Card (No Box, Only Text & Image) */
+.story {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Ensure Full Image Display */
+.story img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.story:hover img {
+    transform: scale(1.05);
+}
+
+/* Bold & Trendy Titles */
+.story-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* Readable & Balanced Story Text */
+.story-text {
+    font-size: 16px;
+    color: #444;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Animation Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design - Mobile-Friendly */
+@media (max-width: 900px) {
+    .stories-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .story {
+        max-width: 100%;
+        width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stories-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story {
+        width: 90%;
+    }
+
+    .stories-heading {
+        font-size: 30px;
+    }
+}
+
+
+
+    /* feedback styly */
+
+    /* Global Styles */
+
+
+
+
+/* Header & Footer */
+#header-placeholder, #footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: #ff6600;
+    opacity: 0.5;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 15px;
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.rating {
+    color: #ffcc00;
+}
+
+.testimonial-text {
+    color: #555;
+    font-style: normal;
+    border-left: 4px solid #ff6600;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+/* Testimonial Form Container */
+.testimonial-form-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Form Styling */
+.testimonial-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Input & Textarea */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+    outline: none;
+}
+
+/* Upload Section */
+.upload-container {
+    text-align: center;
+    border: 2px dashed #ff6600;
+    padding: 15px;
+    border-radius: 6px;
+    background: #fff5e6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-container:hover {
+    background: #ffe0b3;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff6600;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+}
+
+.upload-input {
+    display: none;
+}
+
+/* Rating Section */
+.rating-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating-star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-star:hover,
+.rating-star.selected {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff6600, #e65c00);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #e65c00, #cc5200);
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+ 
