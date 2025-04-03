@@ -6,7 +6,8 @@ const multer = require('multer');
 const path = require('path');
 const nodemailer = require('nodemailer');
 
-env.config();
+require('dotenv').config();  
+
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
